@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0", 
+    "tasks": [
+        {        
+            "label": "JC",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3\\jbr\\bin\\javac.exe"
+            },
+            "args": [
+                "${file}"   
+            ]   
+        },        
+        {        
+            "label": "JR",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.3\\jbr\\bin\\java.exe"  
+            },
+            "args": [        
+                "-cp", "${fileDirname}", "${fileBasenameNoExtension}"
+            ]
+        }
+    ]
+}
